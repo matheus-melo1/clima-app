@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css">
+</head>
+<body>
+    <main>
+      <div class="search-box">
+        <label for=""><i class="fa-solid fa-location-dot"></i></label>
+        <input id="input" type="text" placeholder="Procurar">
+        <button id="search"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </div>
+
+      <div class="weather-box">
+        <h1 id="city">Sao Paulo, BR</h1>
+        <div class="weather-info">
+          <div class="weather-img">
+            <img id="temp_img" src="" alt="">
+          </div>
+          <div class="weather-graus">
+            <p id="temp" class="weather-text"></p>
+            <p id="desc">Céu Limpo</p>
+          </div>
+        </div>
+
+        <div class="weather-water-wind">
+          <div>
+            <i class="fa-solid fa-water"></i>
+            <div>
+              <p id="humidity">91%</p>
+              <span>Húmidagem</span>
+            </div>
+          </div>
+          <div>
+            <i class="fa-solid fa-wind"></i>
+            <div>
+              <p id="wind">6km/h</p>
+              <span>Vento</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="./js/index.js"></script>
+</body>
+</html>
